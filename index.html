@@ -15,23 +15,35 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="allbg">
     <div class="container">
-      <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
+      <div class="row mainbg">
+        <!-- empty section  -->
+        <div class="col-4"></div>
+
+        <!-- content section -->
+      <div class="col-lg-4 cardM " >
+        
         <div class="card-body">
+          <img src="./images/bmi_chart.png" class="card-img-top" alt="..." /><br>
           <h5 class="card-title">BMI Calculation</h5>
           <input
             type="text"
             id="wgt"
             placeholder="Enter your Weight in 'Kgs'"
           />
-          <input type="text" id="hgt" placeholder="Enter your Height in 'cm'" />
+          <input type="text" id="hgt" placeholder="Enter your Height in 'cm'" /><br>
           <button onclick="myFun()" class="btn btn-primary">Click Here</button>
-        </div>
+
+          <!-- result -->
+        </div class="endRes">
         <h1>BMI No. <span id="result"></span></h1>
         <h2 id="bmi"></h2>
       </div>
+
+<!-- empty section  -->
+      <div class="col-4"></div>
+    </div>
     </div>
 
     <!-- external js link  -->
